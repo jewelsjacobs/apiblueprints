@@ -10,7 +10,7 @@ Design, documentation and mock data fo API development
     - [language-api-blueprint Atom package](language-api-blueprint)
     - [api-blueprint-preview](https://atom.io/packages/api-blueprint-preview)
     - [apiary-highlighter](https://atom.io/packages/apiary-highlighter)
-- __(optional)__ A REST client which can import API Blueprint files. A folder for paw files used by [Paw](https://luckymarmot.com/paw) has been included. Postman also has a [Blueprint tool](https://github.com/thecopy/apiary2postman).  You can also create a free account on https://apiary.io/ and edit Blueprint files and test them there.
+- __(optional)__ A REST client which can import API Blueprint files. [Paw](https://luckymarmot.com/paw) is a great client but not free. Postman (free) also has a [Blueprint tool](https://github.com/thecopy/apiary2postman).  You can also create a free account on https://apiary.io/ and edit Blueprint files and test them there.
 
 __NOTE: The IntelliJ IDEA Blueprint Plugin does not work.__
 
@@ -42,8 +42,8 @@ __NOTE: The IntelliJ IDEA Blueprint Plugin does not work.__
 - The structure of the spec should be as follows, i.e. for the alarm API:
 
 
-                  ├── boundary-alarm
-                  │   ├── boundary-alarm.apib
+                  ├── alarm
+                  │   ├── alarm.apib
                   │   └── includes
                   │       ├── alarm-errors.json
                   │       ├── alarm-request.json
@@ -54,7 +54,7 @@ __NOTE: The IntelliJ IDEA Blueprint Plugin does not work.__
 
 
 ## Compile Blueprint and create documentation
-- Run grunt command to build compiled API Blueprint file and HTML documentation making sure to include the API name you included in the api directory, i.e. if the **API directory** and **.apib** was named `boundary-alarm` the command to run would be:
+- Run grunt command to build compiled API Blueprint file and HTML documentation making sure to include the API name you included in the api directory, i.e. if the **API directory** and **.apib** was named `alarm` the command to run would be:
 
 
 

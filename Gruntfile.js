@@ -26,9 +26,9 @@ module.exports = function(grunt) {
   grunt.registerTask('build', function(api) {
 
     if (api) {
-      var htmlDocFile = 'public/boundary-' + api + '.html';
-      var compiledMarkdownFile = 'docs/boundary-' + api + '.md';
-      var blueprintFile = 'boundary-' + api + '/boundary-' + api + '.apib';
+      var htmlDocFile = 'public/' + api + '.html';
+      var compiledMarkdownFile = 'docs/' + api + '.md';
+      var blueprintFile = api + '/' + api + '.apib';
 
       glob("docs/**/*.md", function (er, files) {
         grunt.config('aglio.docs.files', {
