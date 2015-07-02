@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "metric": {
+      "type": "string"
+    },
+    "plugin": {
+      "type": ["string", "null"]
+    },
+    "triggerInterval": {
+      "type": "integer"
+    },
+    "typeId": {
+      "type": "integer"
+    },
+    "familyId": {
+      "type": "integer"
+    },
+    "triggerPredicate": {
+      "type": "object",
+      "properties": {
+        "agg": {
+          "type": "string"
+        },
+        "op": {
+          "type": "string"
+        },
+        "val": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "agg",
+        "op",
+        "val"
+      ]
+    },
+    "isDeleted": {
+      "type": "boolean"
+    },
+    "isDisabled": {
+      "type": "boolean"
+    },
+    "perHostNotify": {
+      "type": "boolean"
+    },
+    "note": {
+      "type": "string"
+    },
+    "actions": {
+      "type": "array"
+    },
+    "hostGroupId": {
+      "type": "integer"
+    },
+    "timeoutInterval": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "name",
+    "metric",
+    "triggerInterval",
+    "typeId",
+    "familyId",
+    "isDeleted",
+    "isDisabled",
+    "perHostNotify"
+  ]
+}

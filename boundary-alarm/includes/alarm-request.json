@@ -1,0 +1,21 @@
+{
+    "id": 100,
+    "name": "Metric Threshold Alarm 1",
+    "metric": "MEMU",
+    "plugin": null,
+    "triggerInterval": 60000,
+    "typeId": 3,
+    "familyId": 1,
+    "triggerPredicate": {
+        "agg": "avg",
+        "op": "gt",
+        "val": 9
+    },
+    "isDeleted": false,
+    "isDisabled": false,
+    "perHostNotify": true,
+    "note": "",
+    "actions": [],
+    "hostGroupId": 9,
+    "timeoutInterval": 14400000
+}

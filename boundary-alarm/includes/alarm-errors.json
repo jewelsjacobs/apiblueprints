@@ -1,0 +1,31 @@
+{
+    "errors": [
+        {
+            "instance": "alarm",
+            "field": "triggerPredicate.agg",
+            "error": "required",
+            "schema": {
+                "type": "string",
+                "required": true
+            }
+        },
+        {
+            "instance": "alarm",
+            "field": "triggerPredicate.op",
+            "error": "required",
+            "schema": {
+                "type": "string",
+                "required": true
+            }
+        },
+        {
+            "instance": "alarm",
+            "field": "triggerPredicate.val",
+            "error": "required",
+            "schema": {
+                "type": "number",
+                "required": true
+            }
+        }
+    ]
+}
